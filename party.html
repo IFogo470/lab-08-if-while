@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+     <script>
+    var userinput = prompt("Let's party! How long till the party B?");
+    var usernum = parseInt(userinput, 10);
+
+    if (usernum < 1) {
+console.log("Party Now!!!");
+document.write("party Now");
+} else {
+// usernum = 1; so loop down to 1 from this number and party message
+  for (i = usernum; 1 >= 1; i = i - 1) {
+    console.log(i);
+    document.write(i + "<br>");
+      if (i == 1) {
+        console.log("Party Time!!!");
+      document.write("Party Time!!!");
+      }
+    }
+}
+    </script>
+  </body>
+</html>
