@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -8,15 +7,27 @@
   <body>
    <script>
 
-   var a = prompt("give me a number");
-   var b = prompt("give me another number");
-   var c = prompt("and a third?");
-   var d = prompt("Final number?");
 
-   var product = a + b + c + d / 4;
+var average = 0;
+var sum = 0;
+  //each time the page loads we reset these variable to 0
 
-     console.log("Your average is" + " " + product);
-     document.write("Your average is" + " " + product);
+   for (i = 0; i < 4; i + 1) {
+ // i (current value of i) = i (previous)+ 1
+  var userinput = prompt("number please");
+  var usernum = parseInt(userinput, 10);
+// convert userinput into a number to add to sum
+  sum = sum + usernum;
+// sum ( current value) =sum ( previous value) = usernum (new input)
+    consile.log("user unput is: " + usernum + "and the current sum is" + sum);
+}
+  average = sum / 4;
+  // finally after each value is colllected, calaculate average outside
+  console.log("The average is " + average);
+
+//average functions:
+// ( a + b + c + d + ........ n ) / n
+
 
    </script>
 </body>
